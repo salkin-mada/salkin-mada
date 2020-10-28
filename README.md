@@ -6,22 +6,28 @@
 
 ## Everyday usage
 
-* play{SawDPW.ar(666)!666}
-* s.volume_(666)
-	* ! 
-	```lua
+* `play{SawDPW.ar(666)!666}`
+* `s.volume_(666)`
+
+```lua
+
 function M.scnvim_record()
 	local opts = { nowait = true, noremap = true, silent = true }
 	local mapping = {
-
-		{'n', '<silent><buffer><F8>', M.scnvim_send('if(s.isRecording)
+		{'n', '<buffer><F8>', M.scnvim_send('if(s.isRecording)
 				{s.stopRecording}{s.record("~/.local/share/SuperCollider/Recordings"
 						+/+PathName(thisProcess.nowExecutingPath).fileNameWithoutExtension
 						+/+Date.localtime.stamp++".wav", numChannels: s.options.recChannels)
 				}')
 		},
-
 	}
 M.mapping(mapping, opts)
 	end
+
+	```
+
+	```
+
+	alias b='br -sh'
+
 	```
