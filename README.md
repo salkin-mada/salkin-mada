@@ -9,8 +9,7 @@
 * `play{SawDPW.ar(666)!666}`
 * `s.volume_(666)`
 
-```lua
-
+	```lua
 function M.scnvim_record()
 	local opts = { nowait = true, noremap = true, silent = true }
 	local mapping = {
@@ -23,11 +22,4 @@ function M.scnvim_record()
 	}
 M.mapping(mapping, opts)
 	end
-
-	```
-
-	```
-
-	alias b='br -sh'
-
 	```
