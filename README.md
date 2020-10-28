@@ -11,4 +11,4 @@
 * s.volume_(666)
 
 
-<img src="./noisemeasurement1.jpg"
+<img src="./noisemeasurement1.jpg">
